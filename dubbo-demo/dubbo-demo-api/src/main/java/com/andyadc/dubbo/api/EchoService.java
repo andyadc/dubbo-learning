@@ -4,7 +4,7 @@ package com.andyadc.dubbo.api;
  * @author andy.an
  * @since 2018/11/14
  */
-public interface DemoService {
+public interface EchoService {
 
-    String hello(String message);
+    String echo(String message);
 }

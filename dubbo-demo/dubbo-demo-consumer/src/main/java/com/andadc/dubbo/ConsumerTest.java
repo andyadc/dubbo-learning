@@ -1,6 +1,6 @@
 package com.andadc.dubbo;
 
-import com.andyadc.dubbo.api.DemoService;
+import com.andyadc.dubbo.api.EchoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -13,10 +13,10 @@ public class ConsumerTest {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:spring.xml"});
         context.start();
 
-        DemoService demoService = (DemoService) context.getBean("demoService");
+        EchoService echoService = (EchoService) context.getBean("echoService");
 
         for (int i = 0; i < 100; i++) {
-            System.out.println(demoService.hello("num=" + i));
+            System.out.println(echoService.echo("num=" + i));
 
             Thread.sleep(1000);
         }

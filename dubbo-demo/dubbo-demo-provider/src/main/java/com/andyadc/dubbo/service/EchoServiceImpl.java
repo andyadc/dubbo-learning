@@ -1,6 +1,6 @@
 package com.andyadc.dubbo.service;
 
-import com.andyadc.dubbo.api.DemoService;
+import com.andyadc.dubbo.api.EchoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,12 +8,12 @@ import org.slf4j.LoggerFactory;
  * @author andy.an
  * @since 2018/11/14
  */
-public class DemoServiceImpl implements DemoService {
+public class EchoServiceImpl implements EchoService {
 
-    private static final Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(EchoServiceImpl.class);
 
     @Override
-    public String hello(String message) {
+    public String echo(String message) {
         logger.info("message={}", message);
         return "Hello " + message;
     }

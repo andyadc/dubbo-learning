@@ -11,6 +11,6 @@
 
     <dubbo:registry protocol="zookeeper" address="${zookeeper.address}"/>
 
-    <dubbo:reference id="demoService" interface="com.andyadc.dubbo.api.DemoService" version="1.0"/>
+    <dubbo:reference id="echoService" interface="com.andyadc.dubbo.api.EchoService" version="1.0"/>
 
 </beans>
