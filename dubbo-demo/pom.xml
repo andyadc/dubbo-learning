@@ -17,9 +17,8 @@
     </modules>
 
     <properties>
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.2.2.RELEASE</spring.version>
         <dubbo.version>2.6.7</dubbo.version>
-        <curator.version>2.13.0</curator.version>
         <slf4j.version>1.7.29</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <junit.version>4.12</junit.version>
@@ -46,13 +45,6 @@
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
-            <!--
-            <dependency>
-                <groupId>org.apache.curator</groupId>
-                <artifactId>curator-framework</artifactId>
-                <version>${curator.version}</version>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
